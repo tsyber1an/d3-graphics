@@ -1,5 +1,25 @@
-= Distibutions graphs
+= Work example of graphs using d3.js
 
-Build status: passes
+Graphs
+- Doughnut with rotation
+- Time series with intersection slider
+- Distribution with slider
 
-stable version was tagged as 0.3-stable
+To run examples:
+
+in terminal run server, for example
+
+python -m SimpleHTTPServer 3000
+
+then in browser 
+
+http://localhost:3000/graphs/doughnut
+http://localhost:3000/graphs/time_series
+http://localhost:3000/graphs/distributions
+
+
+
+
+
+
+
