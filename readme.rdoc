@@ -1,4 +1,4 @@
-= Work example of graphs using d3.js
+= Work examples of graphs using d3.js
 
 Graphs
 - Doughnut with rotation
@@ -14,7 +14,9 @@ python -m SimpleHTTPServer 3000
 then in browser 
 
 http://localhost:3000/graphs/doughnut
+
 http://localhost:3000/graphs/time_series
+
 http://localhost:3000/graphs/distributions
 
 
