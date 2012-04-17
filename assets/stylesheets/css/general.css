@@ -1,0 +1,1370 @@
+/* @override 
+	file:///Users/icicleta/Documents/bullingdon/site/style.css
+	http://localhost:8080/assets/general.css
+*/
+
+/************************************
+            By Iciar Novo Fernandez
+        http://www.icicleta.com
+
+           For Bullingdon(Gibraltar) Limited.
+
+     Check out http://quantemplate.com
+************************************/
+
+/* ================ fonts ================ */
+@font-face{
+font-family: 'FaktPro_SemiBold';
+src: url( 'https://fnt.webink.com/wfs/?drawer=73671F2B-1786-4FB6-8BB9-11289093AB0A&font=32A08701-00DD-59BB-ADAB-E9D993C40896');
+font-weight:normal;font-style:normal;
+}
+
+@font-face{
+font-family: 'FaktPro_Blond';
+src: url( 'https://fnt.webink.com/wfs/?drawer=73671F2B-1786-4FB6-8BB9-11289093AB0A&font=89A66581-A3F4-3AAE-45FD-F57659794979');
+font-weight:normal;font-style:normal;
+}
+/* ================ general ================ */
+
+
+body{
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+
+
+h1{
+	font-size: 160%;
+}
+h2{
+	font-size: 130%;
+	text-align: left;
+	padding-left: 20px;
+}
+h3{
+	font-family:'FaktPro_Blond', Helvetica, Arial, sans-serif;
+	font-size:15px;
+	padding-left:18px;
+	text-align: left;
+	color:rgb(107, 107, 107);
+}
+
+h4{
+	clear: both;
+	margin-bottom: 6px;
+	padding:5px 5px 5px 20px;
+	font-size:1.2em;
+	color:#fff;
+	background-color: #b4c1d4;
+    background-image: url(/assets/status-green.png); /*, url(/assets/tick-small.png)  ;*/
+    background-repeat:no-repeat;
+    background-position:1260px 4px, 930px 4px;
+	font-weight:400;
+	z-index: 1;
+}
+
+h4.neutro{
+	background: #c0cada url(/assets/status-neutral.png) no-repeat 1260px 4px;
+}
+
+h4.error {
+    background: #c0cada url(/assets/status-red.png) no-repeat 1260px 4px ;
+}
+
+h4:before {
+	content: ' ';
+	position: absolute;
+	border: 4px solid transparent;
+	border-left-color: #fff;
+	margin: 7px 0 4px -10px;
+}
+
+h4.selected{
+	color: #fff;
+	margin-bottom:0;
+	background: #6883a9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6883a9 0%, #8ca0bd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6883a9), color-stop(100%,#8ca0bd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6883a9 0%,#8ca0bd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6883a9 0%,#8ca0bd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6883a9 0%,#8ca0bd 100%); /* IE10+ */
+	background: linear-gradient(top,  #6883a9 0%,#8ca0bd 100%); /* W3C */
+}
+
+h4.selected:before{
+	border: 4px solid transparent;
+	border-top-color: #fff;
+	margin: 10px 0 4px -14px;
+}
+
+h4.open{
+	color: red;
+}
+
+h5{
+	/*
+	width: 30%;
+	overflow: hidden;
+	padding: 0 5px;
+	z-index: 1;
+	*/
+	font-family:'FaktPro_Blond', 'Fakt Pro Bln', Helvetica, Arial, sans-serif;
+	font-size:1.4em;
+	font-weight: 400;
+	text-align: left;
+	color: rgb(0, 46, 109);
+	/*
+	-moz-border-radius: 0 3em 0 0;
+	border-radius: 0 3em 0 0;
+	background: rgb(220,220,220);
+	*/
+}
+
+h5.h5_columns{
+	padding:0;
+	margin-left: 0;
+}
+
+h6{
+	width: 100%;
+	padding:15px 0 5px 0;
+	line-height: 1.3;
+	font-size:11px;
+	font-weight:normal;
+	text-align: center;
+	color:#6b6b6b;
+}
+
+.clear{
+	clear:both;
+}
+
+a, a:focus{ 
+    color:rgb(190,226,231);
+	text-decoration:none;
+}
+
+a:hover,  a:active, .selected{
+}
+
+p{
+	font-size:.8em;
+	color:rgb(0, 46, 109);
+}
+
+label{
+	display: block;
+	font-size:11px;
+	color: rgb(0, 46, 109);
+	font-weight:400;
+	table-layout: fixed;
+	text-align: left;
+}
+
+label.overdue{
+	color: #ccc;
+}
+
+label#name_of_partner{
+	padding-top: 10px;
+	margin-left: 20px;
+}
+
+legend{
+	margin-left:5px;
+	color: rgb(0,46,109);
+	font-size:1.3em;
+}
+
+.main{
+	padding: 0 20px 20px 20px;
+	margin-top:90px;
+	overflow: hidden;
+}
+
+#content {
+	width: 1178px;
+	overflow: hidden;
+	clear: both;
+}
+
+#content .nav-content{
+	width: 100%;
+	overflow: hidden;
+    margin-bottom:40px;
+}
+
+.group{
+	width: 1178px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom:10px;
+	background: #f7f7f7;
+}
+
+.align{
+	padding-top:15px;
+}
+
+/*div.section, .dataTables_wrapper, .dataTables_wrapper div {*/
+    /*position:static;*/
+    /*overflow: hidden;*/
+/*}*/
+
+
+/* @group second menu */
+
+/* =================================== second menu START ========================================== */
+#second_menu{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	position: fixed;
+	top:50px;
+	display: block;
+	padding: 4px 0 4px 20px;
+	margin-left: -20px;
+	z-index: 10;
+	-webkit-box-shadow: 0 8px 6px -6px #ccc;
+   -moz-box-shadow: 0 8px 6px -6px #ccc;
+    box-shadow: 0 8px 6px -6px #ccc;
+	background: #fff;
+}
+
+#second_menu_wrap{
+	overflow: hidden;
+	width: 1178px;
+	z-index: 9;
+}
+
+#second_menu #top_left{
+	display: block;
+	float: left;
+}
+
+#second_menu #top_left a{
+	position: relative;
+	top: 2px;
+	font-family:'FaktPro_SemiBold', Helvetica, Arial, sans-serif;
+	font-size:15px;
+    color: rgb(0,46,109);
+}
+
+#second_menu #top_right{
+	display: block;
+	float: right;
+}
+#second_menu #top_right ul{
+	height: 24px;
+	overflow: hidden;
+    display: block;
+    float: left;
+}
+
+#second_menu #top_right ul li{
+	display: block;
+	float: left;
+	margin-left:10px;
+}
+
+#second_menu #top_right ul li:first-child{
+	margin-left:0;
+}
+
+#second_menu #top_right ul:first-child li{
+	margin-left:0;
+}
+
+#second_menu #top_right ul:first-child li:first-child input{
+	width: 100px;
+	height: 20px;
+    background: url(/assets/search.png) 85px center no-repeat;
+}
+
+#second_menu #top_right ul li a{
+	width: 20px;
+	height: 22px;
+	display: block;
+	text-indent:-9999px;
+}
+
+#second_menu #top_right ul li a:first-child{
+	background:  url(/assets/repository.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a:first-child:hover{
+	background:  url(/assets/repository-hover.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a[title="Copy"]{
+	background: transparent url(/assets/copy.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a[title="Copy"]:hover{
+	background: transparent url(/assets/copy-hover.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a[title="Add"]{
+	background: transparent url(/assets/plus.png) no-repeat center center;
+
+}
+
+#second_menu #top_right ul li a[title="Add"]:hover{
+	background: transparent url(/assets/plus-hover.png) no-repeat center center;
+
+}
+
+#second_menu #top_right ul li a[title="Help"]{
+	background: transparent url(/assets/help.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a[title="Help"]:hover{
+	background: transparent url(/assets/help-hover.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a.settings{
+	background: transparent url(/assets/cog-light.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a.settings:hover{
+	background: transparent url(/assets/cog-dark.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a.settings.show{
+	background: transparent url(/assets/cog-blue.png) no-repeat center center;
+}
+
+#second_menu #top_right ul li a.mergers{
+	position: relative;
+	top: 3px;
+	padding: 10px 10px;
+	display: inline;
+	color: #fff;
+	background: #ccc;
+}
+
+#second_menu #top_right ul li a.mergers:hover{
+	background: #bababa;
+}
+
+#second_menu #top_right ul li a.mergers.show{
+	background: #4c5e7e;	
+}
+
+/* @end */
+
+/* @group form lists */
+
+/* =================================== form list START ========================================== */
+			ul.form {
+				width: 1138px;
+				overflow: hidden;
+				float: left;
+				clear: both;
+				margin-bottom:8px;
+				padding:10px 18px;
+				}
+				
+			ul.last{
+				margin: 0;			
+				}
+				
+				ul.form li{
+					width: 182px;
+					border: none;
+					float: left;
+					margin-right:10px;
+				}
+				
+				ul.form li.col3{
+					width: 216px;
+				}
+				
+				ul.form li.col2{
+					width: 51px;
+				}
+				
+				ul.form.link_to{
+					margin-top:20px;
+				}
+
+				ul.form li input, #top_right ul li input{
+					font-family: Tahoma, Helvetica, Arial, sans-serif;
+					width:180px;
+					height: 20px;
+					display: block;
+					margin-right: 10px;
+					font-size:11px;
+					text-indent:2px;
+				    color: rgb(107, 107,107);
+					border: 1px solid #e3e3e3;
+					cursor:default;
+				  	cursor: pointer;	
+				  	background: #fff;			
+				}
+					
+				ul.form li.textarea{
+					width: 376px;
+	
+				}			
+				textarea{
+					clear: both;
+					width: 366px;
+					height: 60px;
+					padding: 2px 4px;
+	 				color: rgb(107,107,107);
+					border: 1px solid #e3e3e3;
+				  	cursor: pointer;	
+				}
+				
+				ul.form li input[type=submit]{
+					color: #fff;
+				}
+				
+				ul.form li.risk_radio input{
+					width: 18px;
+					float: left;
+				}
+				
+				ul.form label.long_label{
+					width: 400px;
+				}
+					
+				ul.form li input#security_or_entity_profile{
+					width: 564px;
+				}
+				
+				ul.form li input:focus{
+					color: #6a6a6a;
+					font-size:11px;
+				}
+				
+				ul.form li p.unit{
+					width: 10px;
+					position: relative;
+					top: -18px;
+					left:168px;
+					color:#6a6a6a;
+				}
+				
+				ul.form li p.time{
+					left:156px;
+				}
+				ul.form li.add{
+					text-align: left;
+}
+					li.add a{
+						font-size:11px;
+						color: rgb(107,107,107);
+						padding: 2px 0;
+						padding-left: 20px;
+					}
+
+					li.add a.add_info{
+					background: transparent url(/assets/plus-light.png) no-repeat left center;
+					}
+					
+					li.add a.remove_info{
+						background: transparent url(/assets/plus-light.png) no-repeat left center;
+					}
+					
+					li.add a.add_info:hover{
+						background: transparent url(/assets/plus-blue.png) no-repeat left center;
+					}
+					
+					li.add a.remove_info:hover{
+						background: transparent url(/assets/minus-red.png) no-repeat left center;
+					}
+					
+					li.add_form{
+					position: relative;
+					top: 20px;
+					}
+					
+					li.add.first{
+						width: 50px;
+					}
+				
+				ul#no-padding{
+					padding-bottom:0;
+				}
+				li.any_work{
+						padding-right:28px;
+					}
+
+/* @end */
+
+/* @group cog */
+/* =================================== cog START ========================================== */
+/*
+.cog{
+	position: relative;
+	float: right;
+}
+.cog a.settings{
+	width: 10px;
+    padding:10px;
+    list-style:none;
+	text-indent:-9999px;
+	background: transparent url(/assets/cog-light.png) no-repeat center center;
+}
+
+.cog a.settings:hover{
+	padding: 9px;
+	background: #fff url(/assets/cog-blue.png) no-repeat center center;
+	border: 1px solid #666;
+	border-bottom: 1px solid #fff;
+}
+*/
+
+
+/* @end */
+
+/* @group top tables */
+
+.toggleCollapse{
+	width: 302px;
+	height: 21px;
+	overflow: hidden;
+	float: left;
+	margin-top:10px;
+	padding-top:5px;
+	padding-left:20px;
+	background: rgb(220, 220, 220);
+	background:
+        -webkit-linear-gradient(200deg, transparent 20px, rgb(220, 220, 220) 20px),
+        -webkit-linear-gradient(315deg, transparent 20px, transparent 20px);   
+	background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+ul.controls{
+	width: 100px;
+	height: 25px;
+	margin-top:11px;
+	background: rgb(220, 220, 220);
+	background:
+ 		-webkit-linear-gradient(0,  transparent 20px, transparent 20px),
+        -webkit-linear-gradient(345deg, transparent 20px, rgb(220, 220, 220) 20px);  
+    background-position: center right, center right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	float: right;
+}
+    
+ul.controls li{
+	display: block;
+	float: right;
+	margin-right:10px;	
+}
+
+ul.controls li a{
+	width: 12px;
+	height: 12px;	
+	display: block;
+	padding-top:15px;
+	text-indent:-9999px;
+}
+
+ul.controls li a[href="#add"], .internal_info ul.controls li a[title="Add Row"]{
+	background:transparent url(/assets/plus-small.png) no-repeat center left;
+}
+
+ul.controls li a.add-quantita{
+	background: transparent url(/assets/T-grey.png) no-repeat center left;
+}
+
+ul.controls li a.add-qualita{
+	background:transparent url(/assets/graph-grey.png) no-repeat center left;
+}
+
+ul.controls li a[href="#add"]:hover{
+	background:transparent url(/assets/plus-small-blue.png) no-repeat center left;
+}
+
+ul.controls li a.add-quantita:hover{
+	background:transparent url(/assets/T-blue.png) no-repeat center left;
+}
+
+ul.controls li a.add-qualita:hover{
+	background:transparent url(/assets/graph-blue.png) no-repeat center left;
+}
+
+/* @end */
+
+/* @group Repository */
+
+#repository{
+	width: 1178px;
+	position:relative;
+	top: 0;
+	padding-bottom:20px;
+}
+
+#repository h2{
+	position: absolute;	
+}
+
+#repository h5.toggleCollapse{
+	width: 322px;
+	overflow: hidden;
+	float: left;
+	background: #dae8eb;
+	background:
+        -webkit-linear-gradient(200deg, transparent 20px, #dae8eb
+ 20px),
+        -webkit-linear-gradient(315deg, transparent 20px, transparent 20px);   
+	background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#repository ul.form{
+	width: auto;
+	float: right;
+}
+
+#repository ul.form li{
+	width: auto;
+	float: right;
+	text-align: right;
+	margin: 0 0 0 40px;
+}
+
+#repository ul.controls{
+	width: 110px;
+	background: #dae8eb;
+	background:
+ 		-webkit-linear-gradient(0,  transparent 20px, transparent 20px),
+        -webkit-linear-gradient(345deg, transparent 20px, #dae8eb 20px);  
+    background-position: center right, center right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;	
+}
+
+#repository ul.controls li{
+	float: right;
+	margin-right:10px;	
+}
+
+#repository ul.controls li a{
+	width: 13px;
+	padding:5px 0;
+	padding-top:15px;
+}
+
+#repository ul.controls li a[title="Copy"]{
+	background: transparent url(/assets/copy.png) no-repeat center center;
+}
+
+#repository ul.controls li a[title="Copy"]:hover{
+	background: transparent url(/assets/copy-hover.png) no-repeat center center;
+}
+
+#repository ul.controls li a[title="Filter"]{
+	background: transparent url(/assets/search.png) no-repeat center center;
+}
+
+#repository ul.controls li a[title="Filter"]{
+	background: transparent url(/assets/search.png) no-repeat center center;
+}
+
+
+/* @end */
+
+/* @group internal info */
+/* =================================== internal info START ========================================== */
+
+.internal_info{
+	width: 100%;
+	padding-bottom:20px;
+	padding: 0;
+	margin: 0;
+	background: #d8edf0;
+}
+
+.internal_info h5.toggleCollapse{
+	background: #dae8eb;
+	background:
+        -webkit-linear-gradient(200deg, transparent 20px, #dae8eb 20px),
+        -webkit-linear-gradient(315deg, transparent 20px, transparent 20px);   
+	background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.internal_info ul.controls{
+	background: #dae8eb;
+	background:
+ 		-webkit-linear-gradient(0,  transparent 20px, transparent 20px),
+        -webkit-linear-gradient(345deg, transparent 20px, #dae8eb 20px);  
+    background-position: center right, center right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	float: right;
+}
+
+.internal_info label{
+	text-align: left;
+	margin-left:2px;
+}
+
+.internal_info li.risk_radio{
+	margin-top:4px;
+}
+
+.internal_info ul.form{
+	width: 100%;
+	margin-top:10px;
+}
+
+/* @end */
+
+
+/* @group tabs */
+/* =================================== tabs START ========================================== */
+
+.tabs_box{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	top: -78px;
+}
+
+.box_down{
+	top: 0;
+}
+
+.tabs_box ul li, #comply .tabs_box ul li{
+	float: left;
+	margin: 0;
+	margin-bottom: -1px;
+	overflow: hidden;
+	position: relative;
+}
+
+.tabs_box ul li a {
+	text-decoration: none;
+	display: block;
+	font-size: 1.2em;
+	padding: 5px 20px;
+	color: rgb(107,107,107);
+}
+
+.tabs_box ul li a:hover{
+	background: #dadddd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dadddd 0%, #e9ecec 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dadddd), color-stop(100%,#e9ecec)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dadddd 0%,#e9ecec 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dadddd 0%,#e9ecec 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dadddd 0%,#e9ecec 100%); /* IE10+ */
+	background: linear-gradient(top,  #dadddd 0%,#e9ecec 100%); /* W3C */
+}
+
+html .tabs_box ul li.active a{
+	padding: 4px 19px;
+	color: #3d268a;
+	border: 1px solid #e3e3e3;
+	border-bottom: none;
+	background: #d7d9db;
+}
+
+
+.tab_content{
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	float: left;
+	background: #e9ecec; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e9ecec 0%, #ffffff 64%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9ecec), color-stop(64%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e9ecec 0%,#ffffff 64%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e9ecec 0%,#ffffff 64%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e9ecec 0%,#ffffff 64%); /* IE10+ */
+	background: linear-gradient(top,  #e9ecec 0%,#ffffff 64%); /* W3C */
+}
+
+/* @end */
+
+/* @group doc right menu */	
+
+/* =================================== doc right menu START ========================================== */
+#right-menu{
+	width: 70px;
+	float:left;
+	position: relative;
+	left:1108px;
+	padding-bottom: 50px;
+	top: 0;
+	z-index: 2;
+}
+
+#right-menu h5{
+	padding-left:10px;
+}
+
+#right-menu #adds{
+	width: 1178px;
+	position: relative;
+	left: -1108px;
+	background:#f7f7f7;
+}
+#right-menu #adds #toggle{
+	float: right;
+}
+
+#right-menu #adds #toggle a.toggle{
+	width: 27px;
+	display: block;
+	float: left;
+	padding-top:10px;
+	text-indent: -9999px;
+}
+
+#right-menu #adds a#rss{
+	background: transparent  url(/assets/rss-grey.png) no-repeat center center;
+}
+
+#right-menu #adds a#rss:hover{
+	background: transparent  url(/assets/rss-blue.png) no-repeat center center;
+}
+
+#right-menu #adds a#url{
+	background: transparent  url(/assets/link.png) no-repeat center center;
+}
+
+#right-menu #adds a#url:hover{
+	background: transparent  url(/assets/link-blue.png) no-repeat center center;
+}
+
+#right-menu #adds a#notes{
+	background: transparent url(/assets/note-light.png) no-repeat center center;
+}
+
+#right-menu #adds a#notes:hover{
+	background: transparent url(/assets/note-dark.png) no-repeat center center;
+}
+
+#right-menu #adds a#attachments{
+	background: transparent  url(/assets/attachment-light.png) no-repeat center center;
+}
+
+#right-menu #adds a#attachments:hover{
+	background: transparent  url(/assets/attachment-dark.png) no-repeat center center;
+}
+
+.notes{
+	background: transparent url(/assets/note-blue.png) no-repeat center center;
+}
+
+a.attachment{
+
+	background: transparent url(/assets/attachment-blue.png) no-repeat center center;
+}
+
+#right-menu #adds .adds-content{
+	display: block;
+	padding: 10px 0 20px 10px;
+	padding-left:10px;
+	margin-bottom:50px;
+}
+
+#right-menu #adds .titles{
+	width: 25%;
+	overflow: hidden;
+	float: left;
+	padding: 10px 0 0 20px;
+}
+
+#right-menu #adds .titles input{
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.titles input{
+	margin-left:0;
+}
+
+#right-menu #adds ul.comments{
+	width: 50%;
+	overflow: hidden;
+	padding: 10px 0 0 0;
+}
+
+#right-menu #adds ul.comments textarea{
+	width: 450px;
+	margin: 0;
+}
+
+#right-menu #adds h5{
+	margin: -7px 0 0 10px;
+	color: #3d268a;
+}
+
+a.hide-content {
+	width: 8px;
+	height: 8px;
+	display: block;
+	margin:0 0 20px 5px;
+	text-indent: -9999px;
+	background: transparent url(/assets/cross-dark.png) no-repeat  ;
+
+}
+
+a.hide-content:hover{
+	background: transparent url(/assets/cross-light.png) no-repeat  ;
+}
+
+/* @end */
+
+
+/*
+.total{
+	padding: 5px 0;
+	margin-top:-3px;
+	border-top: 1px solid rgb(107,107,107);
+	border-bottom: 1px solid rgb(107,107,107);
+}
+
+.total h6{
+	line-height: 18px;
+	font-size:1em;
+	color: rgb(0, 46, 109);
+
+}
+
+.total ul{
+	width: 100%;
+	overflow: hidden;
+}
+
+.total li{
+	width: 85px;
+	float: left;
+	margin: 0;
+}
+
+.total ul#claim_total{
+	width:595px;
+	border-top:1px solid rgb(107,107,107);
+}
+
+.total ul#claim_average{
+	width: 590px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid rgb(107,107,107);
+}
+
+li#claim_total_head{
+	width: 380px;
+}
+
+li#average_head{
+	width: 380px;
+}
+.total input{
+	width: 70px;
+	margin: 0;
+	border: none;
+	text-align: center;
+	color: rgb(0, 46, 109);
+}
+*/
+
+/* @group footer */
+
+/* ================ footer ================ */
+
+#footer{
+	width: 1198px;
+	position: fixed;
+	padding-top:10px;
+	bottom: 0%;
+	z-index: 20;
+}
+
+
+.email_op {
+	right: 0px;
+	bottom: 0px;	
+	position: absolute;
+}
+
+#document_preview {
+	width: 450px;
+	height: 510px;
+	background-color: silver;
+	border: 1px grey solid;
+	margin-top: 8px;
+	float: left;
+}
+
+#document_list {
+	position: absolute;
+	bottom: 70px;
+	margin-left: 10px;
+	width: 617px;
+	height: 162px;
+	background-color: #EDEDED;
+	border: 1px #E0E0E0 solid;
+	float: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#document_list li {
+    display: inline;
+}
+
+#documents_repo .document_content {
+	margin-top: 11px;
+}
+
+#documents_repo .document_content #row1 {
+	margin-top: 20px;
+	margin-left: 0px;
+}
+
+#documents_repo .document_content ul {
+	padding-bottom: 0px;
+}
+
+#documents_repo .document_content input, #documents_repo .document_content textarea {
+	margin-bottom: 4px;
+}
+
+
+#document_list li img {
+    padding: 3px;
+    margin:3px;
+}
+#document_list li.selected img {
+    background-color: red;
+}
+
+#document_list img {
+	height: 130px;
+	border: 1px silver solid;
+	cursor: pointer;
+}
+
+#document_list img:hover
+{
+	border: 1px grey solid;
+}
+
+#document_browser .document_button {
+	width: 32px;
+	height: 32px;
+	background-color: #EEEEEE;
+	border: 1px #CCCCCC solid;	
+	padding: 6px;
+	margin: 8px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#document_browser .document_button:hover {
+	border: 1px #999999 solid;
+	background-color: #FAFAFA;
+}
+
+#document_browser #document_rotate_left {
+	background-image: url(/assets/documents/QT-rotate-anti.png);
+}
+
+#document_browser #document_rotate_right {
+	background-image: url(/assets/documents/QT-rotate-clockwise.png);
+}
+
+#document_browser #document_rotate_left:hover {
+	background-image: url(/assets/documents/QT-rotate-anti-hover.png);
+}
+
+#document_browser #document_rotate_right:hover {
+	background-image: url(/assets/documents/QT-rotate-clockwise-hover.png);
+}
+
+#document_browser #document_new {
+    background-image: url(/assets/documents/QT-new-doc-big.png);
+}
+
+#document_browser #document_new:hover {
+    background-image: url(/assets/documents/QT-new-doc-big-hover.png);
+}
+
+
+#document_browser .document_menu, #document_browser .document_menu:hover {
+	width: 62px;
+	float: left;
+}
+
+#document_browser .document_content, #document_browser .document_content:hover {
+	vertical-align: top;
+	float: left;
+	width: 300px;
+}
+/* @end */
+
+/* @group popup box */
+
+/* ================ popup box ================ */
+
+ul#box_popup li{
+}
+
+ul#box_popup li:hover{
+}
+
+ul#box_popup li a{
+	color: rgb(0, 46, 109);
+}
+
+/* @end */
+
+/* @group buttons */
+
+/* ================ buttons ================ */
+
+ #copy_form, input.button, ul.form li input.button, ul.form li a.button{
+	width: 184px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	text-indent:0;
+	margin-bottom:10px;
+	-webkit-appearance: none;
+	background: #969696;
+}
+   	
+#copy_form:hover, input.button:hover, ul.form li input.button:hover, ul.form li a.button:hover{
+	background: #007347; /* Old browsers */
+	background: -moz-linear-gradient(top,  #007347 0%, #00b159 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007347), color-stop(100%,#00b159)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #007347 0%,#00b159 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #007347 0%,#00b159 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #007347 0%,#00b159 100%); /* IE10+ */
+	background: linear-gradient(top,  #007347 0%,#00b159 100%); /* W3C */
+}
+
+a.button{
+	line-height: 2.5;
+}
+
+ul.form li.go{
+	width: 30px;
+}
+
+ul.form li.go input.button{
+	width: 30px;
+	height: 27px;
+	margin-top:15px;
+	padding: 0;
+	text-indent:0;
+	border: none;
+}
+
+/* @end */
+
+
+/* @group worksheet */
+/* =================================== worksheet START ========================================== */
+
+#send_worksheet{
+	width: 500px;
+}
+
+#send_worksheet ul li input#underwriting_email_title{
+	width:372px;
+}
+
+/* @end */
+
+/* @group date picker */
+
+/* =================================== date picker START ========================================== */
+a.dp-choose-date {
+	float: right;
+	width: 16px;
+	height: 12px;
+	margin-top: -16px;
+	padding: 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(/assets/calendar-light.png) no-repeat;
+}
+
+a.dp-choose-date:hover{
+	background: url(/assets/calendar-dark.png) no-repeat;
+}
+
+dp_choose-date-selected{
+	background: url(/assets/calendar-blue.png) no-repeat;
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -18px;
+	cursor: default;
+}
+/* makes the input field shorter once the date picker code
+ * has run (to allow space for the calendar icon
+ */
+
+table.jCalendar {
+	width: 100px;
+	border: 1px solid #000;
+	background: #fff;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+table.jCalendar th {
+	background: rgba(40,160,175,.2);
+	color: rgb(0,46,109);
+	font-weight: bold;
+	padding: 3px 5px;
+}
+
+table.jCalendar td {
+	background: #fff;
+	color: rgb(102, 129, 168);
+	padding: 3px 5px;
+	text-align: center;
+}
+table.jCalendar td.other-month {
+	background: #eee;
+	color: #fff;
+}
+table.jCalendar td.today {
+	background: #666;
+	color: #fff;
+}
+table.jCalendar td.selected, table.jCalendar td.selected-hover, table.jCalendar td.selected.dp-hover{
+	background: #232d6e;
+	color: #fff;
+}
+
+table.jCalendar tr.activeWeekHover td {
+	background: #eee;
+	color: #666;
+}
+table.jCalendar tr.selectedWeek td {
+	background: #000;
+	color: #fff;
+}
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover {
+	background: #eee;
+	color: #e3e3e3;
+}
+table.jCalendar td.unselectable,
+table.jCalendar td.unselectable:hover,
+table.jCalendar td.unselectable.dp-hover {
+	background: #bbb;
+	color: #888;
+}
+
+/* @group popups */
+
+div.dp-popup {
+	position: relative;
+	 background: #232d6e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #232d6e 0%, #4d6c98 61%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#232d6e), color-stop(61%,#4d6c98)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #232d6e 0%, #4d6c98 61%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #232d6e 0%,#4d6c98 61%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #232d6e 0%,#4d6c98 61%); /* IE10+ */
+    background: linear-gradient(top,  #232d6e 0%,#4d6c98 61%); /* W3C */
+	height:auto;
+	font-size: 10px;
+	padding: 2px;
+	width: auto;
+	margin-top: 16px;
+	line-height: 1.2em;
+}
+div#dp-popup {
+	position: absolute;
+	z-index: 30;
+}
+
+div.dp-popup h2 {
+	font-size: 12px;
+	text-align: center;
+	margin: 2px 0;
+	padding: 0;
+	color: #fff;
+}
+a#dp-close {
+	font-size: 11px;
+	padding: 4px 0;
+	text-align: center;
+	display: block;
+}
+a#dp-close:hover {
+	text-decoration: underline;
+}
+div.dp-popup a {
+	color: rgb(40, 160, 175);
+	text-decoration: none;
+	padding: 3px 2px 0;
+}
+div.dp-popup div.dp-nav-prev {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-prev a {
+	float: left;
+}
+/* Opera needs the rules to be this specific otherwise it doesn't change the cursor back to pointer after you have disabled and re-enabled a link */
+div.dp-popup div.dp-nav-prev a, div.dp-popup div.dp-nav-next a {
+	cursor: pointer;
+}
+div.dp-popup div.dp-nav-prev a.disabled, div.dp-popup div.dp-nav-next a.disabled {
+	cursor: default;
+}
+div.dp-popup div.dp-nav-next {
+	position: absolute;
+	top: 2px;
+	right: 4px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-next a {
+	float: right;
+}
+div.dp-popup a.disabled {
+	cursor: default;
+	color: #aaa;
+}
+div.dp-popup td {
+	cursor: pointer;
+}
+div.dp-popup td.disabled {
+	cursor: default;
+}
+/* @end */
+
+
+/* @end */
+
+#second_menu ul li {
+    display: inline;
+    float: left;
+}
+
+#userEditor input#search_risk{
+	width: 86px;
+	float: right;
+	margin-right:5px;
+	background: #fff url(..//assets/search.png) no-repeat 70px center;
+}

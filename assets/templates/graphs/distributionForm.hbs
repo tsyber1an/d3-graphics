@@ -1,0 +1,39 @@
+<div id="cdf_data_form">
+  <form>
+	  <table>
+		  <tr>
+			  <td></td>
+			  <td>Left</td>
+			  <td></td>
+			  <td>Middle</td>
+			  <td></td>    			
+			  <td>Right</td>
+			  <td></td>
+		  </tr>
+		  <tr>
+			  <td>Percents</td>
+			
+			  <td><input type='text' class="pc" id="percent_left" /></td>
+			  <td>+</td>
+			  <td><input type='text' class="pc" id="percent_middle"  disabled=disabled/></td>
+			  <td>+</td>
+			  <td><input type='text' class="pc" id="percent_right" /></td>
+			  <td>=</td>
+			  <td>100</td>
+			  <td><input type="submit" value="Apply" name="apply" id="applyForPc" /></td>
+		  </tr>
+		  <tr>
+			  <td>Sum</td>
+			
+    		<td><input class="sum" id="left_hand" value=""/></td>
+    		<td>+</td>
+    		<td><input class="sum" id="middle_hand" value="" disabled=disabled/></td>
+    		<td>+</td>
+    		<td><input class="sum" id="right_hand" value=""/></td>
+    		<td>=</td>
+    		<td><div id="sigma"></div></td>
+    		<td><input type="submit" value="Apply" name="apply" id="applyForSum" /></td>
+		  </tr>    
+	  </table>    	
+  </form>
+</div>

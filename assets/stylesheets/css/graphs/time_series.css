@@ -1,0 +1,48 @@
+
+#time_series {
+  font: 10px sans-serif;
+  background: #274170;
+  font-size: 1em;
+  background: #00001e;
+}
+
+#time_series .rule line {
+  shape-rendering: crispEdges;
+}
+
+#time_series .rule line.axis {
+  stroke: #26899f;
+}
+
+#time_series .area {
+  fill: #001738;
+}
+
+#time_series .middle_area {
+  fill: #1a2f4c;
+}
+
+#time_series .line {
+  fill: none;
+  stroke: #289fae;
+  stroke-width: 1.5px;
+}
+
+#time_series .line.dotted{ stroke-dasharray: 5 5; }
+
+#time_series .line.black{ stroke: #26899f;}
+
+#time_series text, #time_series text.label{ 
+	fill: #fff;
+}
+
+#time_series g.slider line {
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+}
+
+#time_series .layer {
+  fill-opacity: 0;
+  stroke: none;
+}

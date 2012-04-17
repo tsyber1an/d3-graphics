@@ -1,0 +1,211 @@
+/* @override http://localhost:8080/assets/layout.css */
+
+/* ================ fonts ================ */
+@font-face{
+    font-family: 'FaktPro_Blond';
+    /*src: url( 'https://fnt.webink.com/wfs/?drawer=73671F2B-1786-4FB6-8BB9-11289093AB0A&font=89A66581-A3F4-3AAE-45FD-F57659794979');*/
+    font-weight:normal;font-style:normal;
+}
+
+
+/* =================================== site START ========================================== */
+
+html, body{
+    -webkit-appearance: none;
+}
+
+body{
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    line-height:1.5;
+    font-size: 12px;
+    font-weight:400;
+}
+
+
+/* =================================== wrap START ========================================== */
+#wrap{
+    min-width:1064px;
+    width:100%;
+}
+/* =================================== header START ========================================== */
+#wrap #header{
+    min-width:1064px;
+    width:100%;
+    position: fixed;
+    font-weight:400;
+    z-index:20;
+    background: #2a3966;
+}
+
+#header li{
+    float:left;
+}
+
+#header-wrap{
+	width: 1178px;
+	height: 50px;
+	overflow: hidden;
+	padding: 0 0 0 20px;
+}
+
+#header-wrap .headers_content{
+	display: block;
+	float: left;
+}
+
+#header img{
+    width: 150px;
+    margin-top:14px
+}
+
+ul.nav{
+	overflow: hidden;
+	margin-left:40px;
+    z-index: 300;
+}
+
+ul.nav li a{
+	width: 100px;
+    display: block;
+    padding: 20px 8px;
+    line-height: 10px;
+    font-size: 13px;
+}
+
+ul.nav li a:hover{
+	background: rgb(25, 31, 81);
+}
+
+ul.nav li.selected a{
+	font-size:13px;
+	color: #fff;
+	background: rgb(25, 31, 81);
+}
+
+ul.nav li.active {
+	background: rgb(25, 31, 81);
+}
+
+ul, ol, li, a {
+    list-style:none;
+}
+
+/* Submenu */
+ul.nav li ul.submenu{
+    width: 117px;
+    position:absolute;
+    top: 50px;
+    list-style:none;
+	background: rgb(25, 31, 81);
+}
+
+ul.nav li ul.submenu li {
+    margin: 0;
+}
+
+ul.nav li ul.submenu li a{
+	width: 107px;
+    padding: 10px 0 10px 10px;
+    font-weight:400;
+    font-size:13px;
+    color:rgb(190,226,231);
+}
+
+ul.nav li ul.submenu li a:hover{
+    background: #2a3966;
+}
+
+#header #company_name{
+	width: 290px;
+	margin-top:2px;
+}
+
+#header #company_name h2{
+	padding: 14px 0;
+	line-height: 1.5;
+	font-size:13px;
+	color: #fff;
+	font-weight:400;
+	text-align: right;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* =================================== user info START ========================================== */
+#user_identity{
+	width: 190px;
+	padding: 16px 5px;
+	margin-left:15px;
+}
+#user_identity a{
+	display: block;
+	text-align: right;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+ 
+#settings{
+	width: 19px;
+	float: right;
+}
+
+#settings ul.nav{
+	margin: 0;
+	padding: 0;
+}
+
+#settings ul.nav li{
+	
+}
+
+#settings ul.nav li a.arrow{
+	position: relative;
+	width: 3px;
+	display: block;
+	text-indent:-9999px;
+	background: url(/assets/arrow-table-grey-down.png) no-repeat center center;
+}
+
+#settings ul.nav li ul.submenu{
+	width: 210px;
+	position: absolute;
+	margin-left:-191px;
+}
+
+#settings ul.nav li ul.submenu  li{
+	width: 100%;
+}
+
+#settings ul.nav li ul.submenu li a{
+	width: 90%;
+	overflow: hidden;
+	padding-right: 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#settings ul.nav li ul.submenu li:nth-child(5), #settings ul.nav li ul.submenu li:last-child{
+	border-top: 1px solid #2a3966;
+;
+}
+/*
+
+#settings ul.submenu{
+	position: absolute;
+	left
+}
+
+#settings ul.submenu li{
+	width: 140px;
+}
+
+#settings ul.submenu li a{
+	width: 100%;
+	background: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}*/
+
+.success {
+    background-color: green;
+}

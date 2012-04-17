@@ -1,0 +1,58 @@
+.yaxis line, .xaxis line {
+  stroke: #eee;
+  shape-rendering: crispEdges;
+}
+
+.yaxis line.axis, , .xaxis line.axis {
+  stroke: #000;
+}
+
+.area {
+  fill: lightsteelblue;
+}
+
+.line, circle.area {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+circle.area {
+  fill: #fff;
+}
+
+.chart rect {
+  stroke: #ED0245;
+  fill: #ED0245;
+}
+
+.slider rect {
+  stroke-width:1;
+  stroke:rgb(222,222,222);
+  fill:rgb(222,222,222);
+  fill-opacity:0.4;
+}
+
+.slider_triangles polygon {
+  stroke: #6B6B6B;
+}
+.slider_triangles polygon:hover {
+  stroke: rgb(255,149,0);
+  cursor: pointer;
+}
+
+.slider_wrapper {
+  fill: #fff !important;
+  stroke: none;
+  fill-opacity: 0.1;
+}
+.slider_labels text, .sum_labels text {
+  fill: black;
+  text-anchor: middle;
+}
+
+#cdf { margin: 15px auto 0 auto; }
+#cdf input.sum, #cdf input.pc {
+	width: 50px;
+	text-align: right;
+} 

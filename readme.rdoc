@@ -1,0 +1,5 @@
+= Distibutions graphs
+
+Build status: passes
+
+stable version was tagged as 0.3-stable
