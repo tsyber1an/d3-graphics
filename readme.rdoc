@@ -7,9 +7,21 @@ Graphs
 
 To see examples (required ruby):
 
-1) (recomemded) rvm gemset use d3js-examples
-2) ./dev.sh
+1) (recomemded)
+
+  rvm gemset use d3js-examples
+
+2) run  
+
+  ./dev.sh
+
+or
+
+  bundle
+  ruby run.rb
+
 3) then in browser 
-  http://localhost:9292/graphs/doughnut
-  http://localhost:9292/graphs/time_series
-  http://localhost:9292/graphs/distributions
+
+http://localhost:9292/graphs/doughnut
+http://localhost:9292/graphs/time_series
+http://localhost:9292/graphs/distributions
