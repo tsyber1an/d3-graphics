@@ -5,23 +5,11 @@ Graphs
 - Time series with intersection slider
 - Distribution with slider
 
-To run examples:
+To see examples (required ruby):
 
-in terminal run server, for example
-
-python -m SimpleHTTPServer 3000
-
-then in browser 
-
-http://localhost:3000/graphs/doughnut
-
-http://localhost:3000/graphs/time_series
-
-http://localhost:3000/graphs/distributions
-
-
-
-
-
-
-
+1) (recomemded) rvm gemset use d3js-examples
+2) ./dev.sh
+3) then in browser 
+  http://localhost:9292/graphs/doughnut
+  http://localhost:9292/graphs/time_series
+  http://localhost:9292/graphs/distributions
