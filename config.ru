@@ -1,6 +1,5 @@
 require 'json'
 require 'active_support/core_ext/string'
-require 'jasmine'
 require 'handlebars_assets'
 
 class QuanApp
