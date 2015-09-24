@@ -6,6 +6,19 @@
   <link rel="stylesheet" type="text/css" media="screen" href="/assets/main.css"/>
   <link rel="icon" type="image/ico" href="/favicon.ico"/>
   <script type="text/javascript" src="/assets/app.js"></script>
+  <style type="text/css">
+    .menu {
+      border-top: 1px dashed #000;
+      padding: 10px 0 10px 0;
+    }
+    .menu a{
+      color: #00c;
+      font-size: 1.5em;
+    }
+    .menu.copyright a{
+      color: gray;
+    }
+  </style>
 </head>
 <body>
 <div id="wrap">
@@ -18,6 +31,17 @@
   <br class="clear">
 
   <div class="main" id="main"></div>
+
+  <div class='menu'>
+    <h1>Graph examples</h1>
+    <a href="/graphs/doughnut">Doughnut</a><br/>
+    <a href="/graphs/time_series">Time series</a><br/>
+    <a href="/graphs/distributions">Graphs distributions</a>
+  </div>
+  <div class='menu copyright'>
+    <a href='http://funfun.github.io'>Funfun (c) Tsyren Ochirov</a><br/>
+    <a href='mailto:tsyren.hey@gmail.com'>Contract me</a><br/>
+  </div>
 </div>
 </body>
 </html>
